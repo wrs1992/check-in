@@ -18,7 +18,7 @@ const runPontoTest = () => {
   }
 };
 
-cron.schedule('16 17 * * 0', runPontoTest, {
+cron.schedule('15 19 * * 0', runPontoTest, {
   timezone,
 });
 
