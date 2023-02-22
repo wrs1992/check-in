@@ -1,0 +1,140 @@
+yarn run v1.22.19
+$ yarn build && node dist/index.js
+$ rimraf ./dist && tsc
+Aguardando por 37.398 segundos
+>Página de Login Carregada!
+>Realizando Login...
+>Página Principal Carregada!
+>Página Ponto Carregada!
+Aguardando por 2.221 segundos
+>Realizando Ponto...
+Aguardando por 4.631 segundos
+>Ponto Registrado com sucesso!
+Aguardando por 0.552 segundos
+>Operação Concluída!
+Done in 69.97s.
+yarn run v1.22.19
+$ yarn build && node dist/index.js
+$ rimraf ./dist && tsc
+Aguardando por 35.782 segundos
+>Página de Login Carregada!
+>Realizando Login...
+>Página Principal Carregada!
+>Página Ponto Carregada!
+Aguardando por 2.597 segundos
+>Realizando Ponto...
+Aguardando por 4.996 segundos
+>Ponto Registrado com sucesso!
+Aguardando por 0.54 segundos
+>Operação Concluída! - 20/02/2023 13:01:14
+Done in 71.97s.
+yarn run v1.22.19
+$ yarn build && node dist/index.js
+$ rimraf ./dist && tsc
+Aguardando por 30.09 segundos
+>Página de Login Carregada!
+>Realizando Login...
+>Página Principal Carregada!
+>Página Ponto Carregada!
+Aguardando por 2.694 segundos
+>Realizando Ponto...
+Aguardando por 4.849 segundos
+>Ponto Registrado com sucesso!
+Aguardando por 0.571 segundos
+>Operação Concluída! - 20/02/2023 14:01:07
+Done in 66.21s.
+yarn run v1.22.19
+$ yarn build && node dist/index.js
+$ rimraf ./dist && tsc
+Aguardando por 43.718 segundos
+>Página de Login Carregada!
+>Realizando Login...
+>Página Principal Carregada!
+>Página Ponto Carregada!
+Aguardando por 2.745 segundos
+>Realizando Ponto...
+Aguardando por 4.657 segundos
+>Ponto Registrado com sucesso!
+Aguardando por 0.515 segundos
+>Operação Concluída! - 20/02/2023 18:01:17
+Done in 75.61s.
+yarn run v1.22.19
+$ yarn build && node dist/index.js
+$ rimraf ./dist && tsc
+Aguardando por 28.655 segundos
+>Página de Login Carregada!
+>Realizando Login...
+>Página Principal Carregada!
+>Página Ponto Carregada!
+Aguardando por 2.177 segundos
+>Realizando Ponto...
+Aguardando por 4.493 segundos
+>Ponto Registrado com sucesso!
+Aguardando por 0.523 segundos
+>Operação Concluída! - 21/02/2023 07:59:43
+Done in 101.43s.
+yarn run v1.22.19
+$ yarn build && node dist/index.js
+$ rimraf ./dist && tsc
+Aguardando por 56.854 segundos
+>Página de Login Carregada!
+>Realizando Login...
+>Página Principal Carregada!
+>Página Ponto Carregada!
+Aguardando por 2.984 segundos
+>Realizando Ponto...
+Aguardando por 4.818 segundos
+>Ponto Registrado com sucesso!
+Aguardando por 0.599 segundos
+>Operação Concluída! - 21/02/2023 13:01:33
+Done in 91.89s.
+yarn run v1.22.19
+$ yarn build && node dist/index.js
+$ rimraf ./dist && tsc
+Aguardando por 50.1 segundos
+>Página de Login Carregada!
+>Realizando Login...
+>Página Principal Carregada!
+>Página Ponto Carregada!
+Aguardando por 2.551 segundos
+>Realizando Ponto...
+Aguardando por 4.378 segundos
+>Ponto Registrado com sucesso!
+Aguardando por 0.552 segundos
+>Operação Concluída! - 21/02/2023 14:01:23
+Done in 81.92s.
+yarn run v1.22.19
+$ yarn build && node dist/index.js
+$ rimraf ./dist && tsc
+Aguardando por 34.695 segundos
+>Página de Login Carregada!
+>Realizando Login...
+>Página Principal Carregada!
+>Página Ponto Carregada!
+Aguardando por 2.885 segundos
+>Realizando Ponto...
+Aguardando por 4.792 segundos
+>Ponto Registrado com sucesso!
+Aguardando por 0.551 segundos
+>Operação Concluída! - 21/02/2023 18:01:38
+Done in 96.05s.
+yarn run v1.22.19
+$ yarn build && node dist/index.js
+$ rimraf ./dist && tsc
+Aguardando por 34.862 segundos
+>Página de Login Carregada!
+>Realizando Login...
+>Página Principal Carregada!
+>Página Ponto Carregada!
+Aguardando por 2.387 segundos
+>Realizando Ponto...
+Aguardando por 4.793 segundos
+>Ocorreu algum erro na marcação de ponto
+Aguardando por 0.596 segundos
+Error: Expected options.clip.width not to be 0.
+    at assert (/home/wesleyreis/Workspace/Nou/check-in/node_modules/puppeteer/lib/cjs/puppeteer/util/assert.js:28:15)
+    at CDPPage.screenshot (/home/wesleyreis/Workspace/Nou/check-in/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:1930:36)
+    at /home/wesleyreis/Workspace/Nou/check-in/dist/services/Ponto.js:136:39
+    at Generator.next (<anonymous>)
+    at fulfilled (/home/wesleyreis/Workspace/Nou/check-in/dist/services/Ponto.js:5:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)

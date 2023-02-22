@@ -34,7 +34,7 @@ export const Ponto = async () => {
   try {
     const options = await getOptions();
 
-    const browser = await puppeteer.launch(options);
+    const browser: Browser = await puppeteer.launch(options);
 
     const page = await browser.newPage();
 
@@ -43,7 +43,7 @@ export const Ponto = async () => {
 
     await page.goto(PAGE_URL);
 
-    await sleepFor(page, 20000, 60000);
+    await sleepFor(page, 25000, 60000);
 
     await page.waitForSelector('.card-body.p-md-0');
     console.log('>Página de Login Carregada!');
@@ -93,7 +93,8 @@ export const Ponto = async () => {
       'Ponto registrado'
     );
 
-    console.log('>Operação Concluída!');
+    const data = getFormattedDate('datetime');
+    console.log('>Operação Concluída! - ' + data);
 
     await browser.close();
     return;
@@ -106,13 +107,13 @@ export const PontoTest = async () => {
   try {
     const options = await getOptions();
 
-    const browser = await puppeteer.launch(options);
+    const browser: Browser = await puppeteer.launch(options);
 
     const page = await browser.newPage();
 
     // Configure the navigation timeout - Pass 0 to disable the timeout
     page.setDefaultNavigationTimeout(timeout);
-    console.log('timeout: '+ timeout);
+
     await page.goto(PAGE_URL);
 
     console.log('>Teste iniciado!');
@@ -163,14 +164,14 @@ const randomIntFromInterval = (min: number, max: number) => {
   return Math.floor(Math.random() * (max - min) + min);
 };
 
-let sleepFor = async (page: any, min: number, max: number) => {
+let sleepFor = async (page: Page, min: number, max: number) => {
   let sleep_duration = randomIntFromInterval(min, max);
   console.log('Aguardando por', sleep_duration / 1000, 'segundos');
   await page.waitForTimeout(sleep_duration);
 };
 
 const makeScreenshotAndSendMessage = async (
-  page: any,
+  page: Page,
   elementName: string,
   messsage: string
 ) => {
@@ -179,7 +180,7 @@ const makeScreenshotAndSendMessage = async (
   const element = await page.$(elementName);
 
   if (element) {
-    const clip = await page.evaluate((el: any) => {
+    const clip = await page.evaluate((el) => {
       const { width, height, top: y, left: x } = el.getBoundingClientRect();
       return { width, height, x, y };
     }, element);
