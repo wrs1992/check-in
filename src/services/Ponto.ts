@@ -118,7 +118,7 @@ export const PontoTest = async () => {
 
     console.log('>Teste iniciado!');
 
-    await sleepFor(page, 20000, 60000);
+    await sleepFor(page, 200, 600);
 
     await page.waitForSelector('.card-body.p-md-0');
     console.log('>Página de Login Carregada!');
