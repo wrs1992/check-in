@@ -43,7 +43,7 @@ export const Ponto = async () => {
 
     await page.goto(PAGE_URL);
 
-    await sleepFor(page, 5000, 25000);
+    await sleepFor(page, 5000, 30000);
 
     await page.waitForSelector('.card-body.p-md-0');
     console.log('>Página de Login Carregada!');
