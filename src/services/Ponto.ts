@@ -18,7 +18,7 @@ puppeteer.use(pluginStealth());
 
 const getOptions = async () => {
     return {
-      args: ['--no-sandbox'],
+      args: ['--no-sandbox','--disable-gpu'],
       defaultViewport: {
         width: 1200,
         height: 800,
