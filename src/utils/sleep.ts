@@ -1,5 +1,5 @@
 export function sleep(): Promise<void> {
-  const randomDelay = [0, 30]; // Array contendo os valores possíveis
+  const randomDelay = [0, 15, 35, 40]; // Array contendo os valores possíveis
 
   const index = Math.floor(Math.random() * randomDelay.length); // Seleciona aleatoriamente um índice do array
   const selectedDelay = randomDelay[index]; // Obtém o valor correspondente ao índice selecionado
